@@ -1,0 +1,26 @@
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img{
+  max-width: 210px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav li{
+  margin-left: 40px;
+}
+
+nav a{
+  text-decoration: none;
+}
+
+nav a:hover{
+  text-decoration: underline;
+}

@@ -1,0 +1,16 @@
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+h1{
+  font-size: 16vw;
+  margin: 0;
+}
+
+a{
+  margin-top: 150px;
+}
