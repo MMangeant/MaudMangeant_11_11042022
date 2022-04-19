@@ -1,0 +1,81 @@
+.banner img{
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.entete{
+  display: flex;
+  justify-content: space-between;
+}
+
+.enteteGauche{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+h1{
+  font-weight: 500;
+  font-size: 2em;
+  margin: 0;
+}
+
+.tags{
+  display: flex;
+}
+
+.tags div{
+  background-color: #FF6060;
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  max-width: 115px;
+  padding: 5px 20px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.proprio{
+  display: flex;
+  align-items: center;
+}
+
+.proprio img{
+  background-color: grey;
+  border-radius: 100%;
+  margin-left: 20px;
+}
+
+.stars{
+  margin-top: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+.infos{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos div{
+  flex-grow: 1;
+  width: 92%;
+
+}
+
+.labelInfos{
+  background-color: #FF6060;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+}
+
+.ctnInfos{
+  background-color: #F6F6F6;
+  width: 100%;
+  padding: 15px;
+  border-radius: 0 0 10px 10px;
+}

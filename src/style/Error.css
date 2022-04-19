@@ -1,16 +1,17 @@
-section{
+.sectionError{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 100px;
+  background-color: transparent;
 }
 
-h1{
+.sectionError h1{
   font-size: 16vw;
   margin: 0;
 }
 
-a{
+.sectionError a{
   margin-top: 150px;
 }

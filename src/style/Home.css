@@ -1,8 +1,9 @@
-section{
+.sectionHome{
   background-color: #F6F6F6;
   border-radius: 10px;
 }
-section div{
+
+.sectionHome div{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -31,7 +32,6 @@ article h2{
 
 article .filter{
   background: linear-gradient(to top,black, transparent, transparent);
-  /*background: linear-gradient(to top, black 0%, transparent 50%);*/
   height: 100%;
   width: 100%;
   position: absolute;

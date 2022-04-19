@@ -17,7 +17,7 @@ function Home() {
       </div>
   
 
-    <section>
+    <section className="sectionHome">
         <div>
 
           {annonces.map((logement) => (
