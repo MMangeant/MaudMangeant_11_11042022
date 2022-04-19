@@ -46,6 +46,7 @@ h1{
   background-color: grey;
   border-radius: 100%;
   margin-left: 20px;
+  width: 100px;
 }
 
 .stars{
@@ -56,14 +57,14 @@ h1{
 
 .infos{
   margin-top: 20px;
-  display: flex;
+  display: grid;
   justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
 }
 
 .infos div{
   flex-grow: 1;
-  width: 92%;
-
 }
 
 .labelInfos{
@@ -75,7 +76,6 @@ h1{
 
 .ctnInfos{
   background-color: #F6F6F6;
-  width: 100%;
   padding: 15px;
   border-radius: 0 0 10px 10px;
 }
