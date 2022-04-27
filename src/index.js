@@ -1,8 +1,8 @@
-
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+
 import './style/index.css';
-import { BrowserRouter as Router,Route,Switch,Link } from 'react-router-dom'
 
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -11,10 +11,10 @@ import Apropos from './pages/Apropos';
 import Error from './pages/Error';
 import Fiche from './pages/Fiche';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+// const root = ReactDOM.createRoot(document.getElementById('root'));
 
 
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <Router>
       <div className='main'>
@@ -37,7 +37,8 @@ root.render(
       </div>
       <Footer />
     </Router>
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 

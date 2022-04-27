@@ -1,5 +1,5 @@
 import { annonces }  from '../data/annonces';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 import imgHome from '../assets/img_accueil.jpg';
 import '../style/Home.css';
 import '../style/index.css';
