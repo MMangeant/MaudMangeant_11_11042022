@@ -2,7 +2,10 @@ import { annonces }  from '../data/annonces';
 import { useParams } from 'react-router-dom'
 import starVide from '../assets/starVide.svg';
 import starPleine from '../assets/starPleine.svg';
+import Collapse from '../components/Collapse';
 import '../style/Fiche.css';
+import arrowLeft from '../assets/arrowLeft.svg';
+import arrowRight from '../assets/arrowRight.svg';
 
 
 function Fiche() {
@@ -13,34 +16,22 @@ function Fiche() {
 
   return (
     <>
-      {/* 
-  
-      <section>
-        <div class="entete">
-          <div class="enteteGauche">
-            <h1>Cozy loft on the Canal Saint-Martin</h1>
-            <p>Paris, Île-de-France</p>
-            <div class="tags">
-              <div>Cosy</div>
-            </div>
-          </div>
-          <div class="enteteDroite">
-            <div class="proprio">
-              <p>Alexandre Dumas</p>
-              <img src="" alt="">
-            </div>
-            <div class="stars"></div>
-          </div>
-        </div>
-      </section> */}
 
       
       {annonces.map((logement) => (
+
+
+
         logement.id === id ? 
         <div key={logement.id}>
-          <div className="banner">
+
+          <div className="diapo">
             <div>
               <img src={ logement.cover } alt="" />
+            </div>
+            <div className='arrows'>
+              <img src={arrowLeft} alt="" className='arrowL' />
+              <img src={arrowRight} alt="" className='arrowR'/>
             </div>
           </div>
 
@@ -69,19 +60,15 @@ function Fiche() {
               </div>
             </div>
 
-            <div className="infos">
-              <div>
-                <div className='labelInfos'>Description</div>
-                <div className='ctnInfos'>{logement.description}</div>
-              </div>
-              <div>
-                <div className='labelInfos'>Équipements</div>
-                <div  className='ctnInfos'>
-                  {logement.equipments.map((equipment) => (
-                    <div>{equipment}</div>
-                  ))}
-                </div>
-              </div>
+            <div className="grid-collapse">
+              
+              <Collapse label='Description' contenu={logement.description} />
+
+              <Collapse 
+                  label='Équipements' 
+                  contenu={logement.equipments.map((equipment) => (<div>{equipment}</div>))} 
+              />
+      
             </div>
         
         </div>
