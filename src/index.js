@@ -13,7 +13,6 @@ import Fiche from './pages/Fiche';
 
 // const root = ReactDOM.createRoot(document.getElementById('root'));
 
-
 ReactDOM.render(
   <React.StrictMode>
     <Router>

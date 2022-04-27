@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom'
 import starVide from '../assets/starVide.svg';
 import starPleine from '../assets/starPleine.svg';
 import Collapse from '../components/Collapse';
+import Gallery from '../components/Gallery';
 import '../style/Fiche.css';
-import arrowLeft from '../assets/arrowLeft.svg';
-import arrowRight from '../assets/arrowRight.svg';
+
 
 
 function Fiche() {
@@ -25,15 +25,9 @@ function Fiche() {
         logement.id === id ? 
         <div key={logement.id}>
 
-          <div className="diapo">
-            <div>
-              <img src={ logement.cover } alt="" />
-            </div>
-            <div className='arrows'>
-              <img src={arrowLeft} alt="" className='arrowL' />
-              <img src={arrowRight} alt="" className='arrowR'/>
-            </div>
-          </div>
+          
+
+          <Gallery img={logement.cover} />
 
 
             <div className="entete">
