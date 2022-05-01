@@ -1,0 +1,30 @@
+.diapo{
+  position: relative;
+}
+
+.diapo img{
+  max-height: 450px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 25px;
+  margin: 40px 0;
+  
+}
+
+.diapo .arrows{
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+}
+
+.diapo .arrows img{
+  /* max-width: 45px; */
+  max-width: 5%;
+  cursor: pointer;
+}

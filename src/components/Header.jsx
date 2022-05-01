@@ -11,14 +11,8 @@ function Header() {
           <img src={logo} className="logo" alt="logo" />
         </Link>
         <nav>
-          <ul>
-            <li>
-              <Link to="/">Accueil</Link>
-            </li>
-            <li>
-              <Link to="/apropos">A propos</Link>
-            </li>
-          </ul>
+          <Link to="/">Accueil</Link>
+          <Link to="/apropos">A propos</Link>
         </nav>
       </header>
     </>

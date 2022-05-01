@@ -32,3 +32,18 @@
   padding: 15px;
   border-radius: 0 0 10px 10px;
 }
+
+
+
+@media screen and (max-width: 800px){
+  .padding-collapse{
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .grid-collapse{
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+  }
+}

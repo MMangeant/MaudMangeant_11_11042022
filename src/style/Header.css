@@ -2,10 +2,12 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.logo img{
-  max-width: 200px;
+.logo{
+  max-width: 180px;
 }
 
 nav ul{
@@ -13,14 +15,24 @@ nav ul{
   display: flex;
 }
 
-nav li{
-  margin-left: 40px;
-}
-
 nav a{
   text-decoration: none;
+  margin-left: 40px;
+  font-size: 1.1em;
 }
 
 nav a:hover{
   text-decoration: underline;
+}
+
+
+@media screen and (max-width: 500px)
+{
+  .logo{
+    max-width: 100px;
+  }
+  nav a{
+    font-size: 0.9em;
+    margin-left: 20px;
+  }
 }

@@ -5,13 +5,22 @@
   align-items: center;
   margin-top: 100px;
   background-color: transparent;
+  text-align: center;
 }
 
 .sectionError h1{
-  font-size: 16vw;
+  font-size: 13em;
   margin: 0;
 }
 
 .sectionError a{
   margin-top: 150px;
+}
+
+
+
+@media screen and (max-width: 600px){
+  .sectionError h1{
+    font-size: 7em;
+  }
 }
