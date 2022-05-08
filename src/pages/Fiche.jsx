@@ -41,7 +41,7 @@ function Fiche() {
                 </div>
                 <div className="tags">
                 {logement.tags.map((tag) => (
-                  <div>{tag}</div>
+                  <div key={tag}>{tag}</div>
                   ))}
                   
                 </div>
@@ -52,7 +52,7 @@ function Fiche() {
                   <img src={logement.host.picture} alt="" />
                 </div>
                 <div className="stars">
-                  {range.map((rangeElem) => logement.rating >= rangeElem ? <img src={ starPleine } alt="" /> : <img src={ starVide } alt="" />)}
+                  {range.map((rangeElem) => logement.rating >= rangeElem ? <img key={rangeElem} src={ starPleine } alt="" /> : <img key={rangeElem} src={ starVide } alt="" />)}
                 </div>
               </div>
             </div>
@@ -63,7 +63,7 @@ function Fiche() {
 
               <Collapse 
                   label='Équipements' 
-                  contenu={logement.equipments.map((equipment) => (<div>{equipment}</div>))} 
+                  contenu={logement.equipments.map((equipment) => (<div key={equipment}>{equipment}</div>))} 
               />
       
             </div>

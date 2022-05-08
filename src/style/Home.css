@@ -21,6 +21,17 @@ article{
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+  transition: all 280ms 0ms ease-in-out;
+}
+
+article:hover{
+  transform: scale(0.97);
+  transition: all 280ms 0ms ease-in-out;
+}
+
+article:hover .filter{
+  opacity: 1;  
+  transition: all 280ms 0ms ease-in-out;
 }
 
 article h2{
@@ -35,12 +46,14 @@ article h2{
 
 article .filter{
   background: linear-gradient(to top,black, transparent, transparent);
+  opacity: 0.8;
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  transition: all 280ms 0ms ease-in-out;
 }
 
 article img{
