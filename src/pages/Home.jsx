@@ -1,6 +1,7 @@
 import { annonces }  from '../data/annonces';
 import { Link } from 'react-router-dom';
 import imgHome from '../assets/img_accueil.jpg';
+import Banner from '../components/Banner';
 import '../style/Home.css';
 import '../style/index.css';
 
@@ -8,13 +9,8 @@ function Home() {
 
   return (
     <>
-    <div className="banner">
-        <h1>Chez vous, partout et ailleurs</h1>
-        <div>
-          <img src={ imgHome } alt="" />
-        </div>
-        <div className="filter"></div>
-      </div>
+
+    <Banner img={ imgHome } slogan="Chez vous, partout et ailleurs" />
   
 
     <section className="sectionHome">

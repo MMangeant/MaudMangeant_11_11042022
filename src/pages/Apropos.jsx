@@ -1,5 +1,6 @@
 import imgApropos from '../assets/img_apropos.jpg';
 
+import Banner from '../components/Banner';
 import Collapse from '../components/Collapse';
 
 const ctn_collapse = {
@@ -15,12 +16,7 @@ function Apropos() {
 
   return (
     <>
-      <div className="banner">
-        <div>
-          <img src={imgApropos} alt="" />
-        </div>
-        <div className="filter"></div>
-      </div>
+      <Banner img={ imgApropos } slogan="" />
 
       <div className='padding-collapse'>
 
