@@ -1,6 +1,6 @@
 import React from 'react';
 // import ReactDOM from 'react-dom';
-import { BrowserRouter as Router,Route,Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 
 import './style/index.css';
 
@@ -18,20 +18,13 @@ const App = () => {
       <Router>
         <div className='main'>
         <Header />
-        <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/apropos">
-              <Apropos />
-            </Route>
-            <Route exact path="/logements/:id">
-              <Fiche />
-            </Route>
-            <Route>
-              <Error />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/apropos" element={<Apropos />} />
+            <Route exact path="/logements/:id" element={<Fiche />} />
+            <Route exact path="*" element={<Error />} />
+          </Routes>
+
         </div>
         <Footer />
       </Router>

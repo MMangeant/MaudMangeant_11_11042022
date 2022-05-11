@@ -1,5 +1,4 @@
 import React from 'react';
-
 import {createRoot} from 'react-dom/client';
 
 import './style/index.css';
@@ -7,12 +6,11 @@ import './style/index.css';
 import App from './App';
 
 
-const rootElement = document.getElementById('root');
-const root = createRoot(rootElement);
-
+const container = document.getElementById('root');
+const root = createRoot(container);
 
 root.render(
-  <App />,
+    <App />
 );
 
 
