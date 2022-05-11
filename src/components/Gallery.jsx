@@ -4,9 +4,7 @@ import { useState } from 'react'
 import arrowLeft from '../assets/arrowLeft.svg';
 import arrowRight from '../assets/arrowRight.svg';
 
-
-
-function Gallery({ img, pictures }) {
+function Gallery({ pictures }) {
 
   const [firstImg, nextImg] = useState(0);
 

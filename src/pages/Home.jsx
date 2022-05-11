@@ -6,26 +6,22 @@ import '../style/Home.css';
 import '../style/index.css';
 
 function Home() {
-
   return (
     <>
 
     <Banner img={ imgHome } slogan="Chez vous, partout et ailleurs" />
   
-
-    <section className="sectionHome">
+      <section className="sectionHome">
         <div>
-
           {annonces.map((logement) => (
-					<article key={logement.id}>
-            <Link to={`logements/${logement.id}`}>
-              <h2>{logement.title}</h2>
-              <div className="filter"></div>
-              <img src={ logement.cover } alt="" />
-            </Link>
-          </article>
-				  ))}
-
+            <article key={logement.id}>
+              <Link to={`logements/${logement.id}`}>
+                <h2>{logement.title}</h2>
+                <div className="filter"></div>
+                <img src={logement.cover} alt="" />
+              </Link>
+            </article>
+          ))}
         </div>
       </section>
 

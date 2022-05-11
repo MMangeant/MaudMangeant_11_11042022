@@ -12,8 +12,6 @@ const ctn_collapse = {
 
 function Apropos() {
 
- 
-
   return (
     <>
       <Banner img={ imgApropos } slogan="" />
@@ -28,10 +26,7 @@ function Apropos() {
       </div>
     </>
   );
-
-
-
-  
+ 
 }
 
 export default Apropos;

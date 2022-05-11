@@ -32,7 +32,6 @@ const App = () => {
               <Error />
             </Route>
           </Switch>
-
         </div>
         <Footer />
       </Router>

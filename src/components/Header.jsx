@@ -6,14 +6,15 @@ function Header() {
   return (
     <>
       <header>
-       
         <Link to="/">
           <img src={logo} className="logo" alt="logo" />
         </Link>
+
         <nav>
           <Link to="/">Accueil</Link>
           <Link to="/apropos">A propos</Link>
         </nav>
+        
       </header>
     </>
   );
