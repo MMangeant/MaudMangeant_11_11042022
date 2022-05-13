@@ -14,12 +14,16 @@ function Gallery({ pictures }) {
         <div>
           <img src={pictures[firstImg]} alt="" />
         </div>
-        <div className='arrows'>
+        { pictures.length > 1 ? (
+          <div className='arrows'>
           <img src={arrowLeft} alt="" className='arrowL'
             onClick={() => firstImg === 0 ? (nextImg(pictures.length - 1)) : (nextImg(firstImg - 1))} />
           <img src={arrowRight} alt="" className='arrowR'
             onClick={() => firstImg === pictures.length - 1 ? (nextImg(0)) : (nextImg(firstImg + 1))} />
         </div>
+          ) : ('')
+        }
+        
       </div>
     </>
   );

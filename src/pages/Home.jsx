@@ -6,6 +6,7 @@ import '../style/Home.css';
 import '../style/index.css';
 
 function Home() {
+
   return (
     <>
 

@@ -13,6 +13,8 @@ import Fiche from './pages/Fiche';
 
 
 const App = () => {
+
+
   return (
   <React.StrictMode>
       <Router>
@@ -22,9 +24,9 @@ const App = () => {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/apropos" element={<Apropos />} />
             <Route exact path="/logements/:id" element={<Fiche />} />
-            <Route exact path="*" element={<Error />} />
+            <Route exact path="/error" element={<Error />} />
+            <Route exact path="/*" element={<Error />} />
           </Routes>
-
         </div>
         <Footer />
       </Router>
